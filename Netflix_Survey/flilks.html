@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="stylo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="form-container">
+        <header id="form-header"> 
+            <h1 id="form-h1"> Net<span>Flix</span></h1>
+            <h3 id="form-description">Thanks for signing up! Tell us more about yourself.</h3>
+        </header>
+        <section id="survey-form-container">
+            <div id="survey-form">
+                <form action="sonuc.html" target="_blank">
+                    <div class="input-box">
+                        <label for="name">Name</label> <br>
+
+                        <input type="name" name="name" id="name" placeholder="Your name">
+                    </div>
+                    <div class="input-box">
+                        <label for="age">Age</label> <br>
+
+                        <input type="number" name="age" id="age" placeholder="Your age">
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label> <br>
+
+                        <input type="email" name="email" id="email" placeholder="Mail Adress">
+                    </div>
+                    <div class="input-box">
+                       <label> Content Type</label> <!-- başlık koymak için label kullandık for koymadık--> <br>
+
+                        <select name="content" id="drop-menu">
+                            <option value="Movie" selected>Movie</option>
+                            <option value="Series">Series</option>
+                            <option value="Documentary">Documentary</option>
+                            <option value="Cartoon">Cartoon</option>
+                        </select>
+                    </div>
+                    
+                    
+                    <div class="input-box">
+                        <label>Movie Type</label>
+                        <br>
+                        <input type="checkbox" id="chbox1" name="movie1" value="comedy">
+                        <label for="chbox1">Comedy</label>
+                        <br>
+                        <input type="checkbox" id="chbox2" name="movie2" value="action">
+                        <label for="chbox2">Action</label>
+                        <br>
+                        <input type="checkbox" id="chbox3" name="movie3" value="scifi">
+                        <label for="chbox3">Sci-Fi</label>
+                    </div>
+                   
+                   
+                    <div class="input-box">
+                        <label >Gender</label>
+                       <br>
+                        <input type="radio" id="radio1" name="gender" value="male">
+                        <label for="radio1">M</label>
+                       <br>
+                        <input type="radio" id="radio2" name="gender" value="female">
+                        <label for="radio2">F</label>
+                    </div>
+                   
+                   
+                    <div class="input-box">
+                        <label for="feedback"> Feed Back</label>
+                        <br>
+                        <textarea name="message" id="feedback" cols="30" rows="10" placeholder="any suggestions?" style="resize:none;">      </textarea>
+                    </div>
+                   
+                    <div class="input-box">
+                        <div id="submit-form"> 
+                            <button type="submit" id="button-form">Send</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+    </div>
+    
+</body>
+</html>
